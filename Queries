@@ -1,18 +1,20 @@
+###################################################
 Intermediate 1
+###################################################
 
 SELECT `emp_name` FROM `employee` 
 WHERE salary < 1500;
 
 ###################################################
-
 Intermediate 2
+###################################################
 
 UPDATE `employee` SET `job_name` = "BIG BOSS"
 WHERE salary > 2000;
 
 ###################################################
-
 Advanced 1
+###################################################
 
 SELECT `emp_id`, `emp_name`, department.dep_name FROM `employee`
 INNER JOIN department
@@ -21,8 +23,8 @@ WHERE department.dep_id =
 2001;
 
 ###################################################
-
 Advanced 2
+###################################################
 
 SELECT employee.emp_name, department.dep_name
 FROM employee 
@@ -33,12 +35,54 @@ AND (department.dep_id = 2001)
 AND employee.hire_date > '1997-01-01';
 
 ###################################################
-
 Challange 
+###################################################
 
 // Increase salary for 44
 
 UPDATE `employee` SET `salary`= employee.salary + 44;
 SELECT employee.emp_name, employee.salary FROM employee;
+
+###################################################
+ADDITIONAL EXERCISES
+###################################################
+
+###################################################
+Basic
+###################################################
+
+1.) 
+SELECT * FROM movie LIMIT 6, 1;
+
+2.)
+SELECT * FROM `movie`
+WHERE movie.year >= 2000 AND movie.year <= 2010;
+
+3.)
+SELECT * FROM `movie` 
+WHERE NOT movie.year BETWEEN 2000 AND 2010;
+
+###################################################
+Intermediate
+###################################################
+
+1.)
+SELECT * FROM `movie`
+WHERE movie.title
+LIKE "%Toy Story%";
+
+2.)
+SELECT * FROM `movie`
+INNER JOIN director ON movie.fk_director_id = director.id
+WHERE director.name = "John Lasseter";
+
+
+
+
+
+
+
+
+
 
 
