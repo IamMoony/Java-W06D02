@@ -76,6 +76,23 @@ SELECT * FROM `movie`
 INNER JOIN director ON movie.fk_director_id = director.id
 WHERE director.name = "John Lasseter";
 
+3.)
+SELECT * FROM `movie`
+INNER JOIN director ON movie.fk_director_id = director.id
+WHERE NOT director.name = "John Lasseter";
+
+4.)
+SELECT * FROM `movie`
+WHERE movie.title
+LIKE "%WALL-%";
+
+###################################################
+Exercise 4
+###################################################
+
+1.)
+
+
 
 
 
