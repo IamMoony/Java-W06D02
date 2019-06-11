@@ -27,4 +27,7 @@ Advanced 2
 SELECT employee.emp_name, department.dep_name
 FROM employee 
 INNER JOIN department ON employee.dep_id = department.dep_id
-WHERE employee.job_name = "CLERK" OR employee.job_name = "MANAGER" AND department.dep_id = 2001 AND employee.hire_date > 1997-01-01;
+WHERE (employee.job_name = "CLERK" 
+OR employee.job_name = "MANAGER")
+AND (department.dep_id = 2001)
+AND employee.hire_date > '1997-01-01';
