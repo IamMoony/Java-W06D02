@@ -31,3 +31,14 @@ WHERE (employee.job_name = "CLERK"
 OR employee.job_name = "MANAGER")
 AND (department.dep_id = 2001)
 AND employee.hire_date > '1997-01-01';
+
+###################################################
+
+Challange 
+
+// Increase salary for 44
+
+UPDATE `employee` SET `salary`= employee.salary + 44;
+SELECT employee.emp_name, employee.salary FROM employee;
+
+
