@@ -1,0 +1,23 @@
+Intermediate 1
+
+SELECT `emp_name` FROM `employee` 
+WHERE salary < 1500;
+
+###################################################
+
+Intermediate 2
+
+UPDATE `employee` SET `job_name` = "BIG BOSS"
+WHERE salary > 2000;
+
+###################################################
+
+Advanced 1
+
+SELECT `emp_id`, `emp_name`, department.dep_name FROM `employee`
+INNER JOIN department
+ON employee.dep_id = department.dep_id
+WHERE department.dep_id =
+2001;
+
+###################################################
