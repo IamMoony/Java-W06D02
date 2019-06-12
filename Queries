@@ -95,6 +95,9 @@ SELECT DISTINCT directors.name
 FROM directors
 ORDER BY directors.name ASC;
 
+2.)
+
+
 
 
 
