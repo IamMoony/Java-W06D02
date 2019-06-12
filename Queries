@@ -96,6 +96,9 @@ FROM directors
 ORDER BY directors.name ASC;
 
 2.)
+SELECT * FROM movies
+ORDER BY movies.year DESC
+LIMIT 0, 4
 
 
 
